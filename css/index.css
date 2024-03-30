@@ -1,0 +1,75 @@
+@import url("./reset.css");
+@import url("./header.css");
+@import url("./kitchen.css");
+@import url("./menu.css");
+@import url("./footer.css");
+@import url("./modal-menu.css");
+@import url("./gallery.css");
+
+/*Шрифт*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*----------------------*/
+body {
+  font-family: "Noto Sans", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 400;
+  background: #000000;
+}
+/* -------------------*/
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 98px;
+}
+/*----------------------*/
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+}
+/*--------------------*/
+a:hover {
+  opacity: 80%;
+}
+/*-------------------*/
+main {
+  height: 100%;
+  flex: 0 0 auto; 
+}
+/*---------------------*/
+.title {
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 900;
+}
+.description {
+  max-width: 632px;
+}
+/*----------------------*/
+.menu-open {
+  overflow: hidden;   
+}
+/*-----------------------*/
+
+@media (max-width: 1098px) {
+  .container {
+    padding: 0px 40px;
+  }
+}
+@media (max-width: 720px) {
+  .wrapper {
+    text-align: center;
+  }
+  .container {
+    padding: 0px 20px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    padding: 0px 10px;
+  }
+}
